@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Zia | Let's Build Together</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #050505;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-8px);
+        }
+
+        .glow-sphere {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, rgba(0,0,0,0) 70%);
+            filter: blur(80px);
+            z-index: -1;
+        }
+
+        .contact-icon {
+            background: linear-gradient(135deg, #4f46e5 0%, #7e22ce 100%);
+        }
+
+        /* Email address ko small letters mein rakhne ke liye */
+        .email-text {
+            text-transform: none !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+
+    <div class="glow-sphere top-[-10%] left-[-10%]"></div>
+    <div class="glow-sphere bottom-[-10%] right-[-10%]"></div>
+
+    <div class="max-w-5xl w-full">
+        <div class="text-center mb-16">
+            <a href="portfolio.php" class="inline-flex items-center gap-2 text-zinc-500 hover:text-white transition-colors mb-8 text-sm uppercase tracking-[0.2em]">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Portfolio
+            </a>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Let's Build Something <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Extraordinary.</span>
+            </h1>
+            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">
+                Ready to take your digital presence to the next level? Reach out through any of these channels.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <a href="https://wa.me/923445268757?text=Hello%20Zia,%20I%20am%20interested%20in%20your%20services!" target="_blank" class="glass-card rounded-[2.5rem] p-10 flex flex-col items-center text-center group">
+                <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 contact-icon shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                <p class="text-zinc-500 text-sm mb-6">Available for quick chat & support.</p>
+                <span class="text-indigo-400 font-bold text-sm tracking-widest uppercase">Chat Now</span>
+            </a>
+
+            <a href="tel:+923445268757" class="glass-card rounded-[2.5rem] p-10 flex flex-col items-center text-center group">
+                <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 contact-icon shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                    <i data-lucide="phone" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Call Me</h3>
+                <p class="text-zinc-500 text-sm mb-6">Direct line for discussions.</p>
+                <span class="text-indigo-400 font-bold text-sm tracking-widest uppercase">+92 341 1630004</span>
+            </a>
+
+            <a href="mailto:sardarshayan765@gmail.com?subject=Project Inquiry" class="glass-card rounded-[2.5rem] p-10 flex flex-col items-center text-center group">
+                <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 contact-icon shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                    <i data-lucide="mail" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Email</h3>
+                <p class="text-zinc-500 text-sm mb-6">Send your detailed project brief.</p>
+                <span class="email-text text-indigo-400 font-bold text-[11px] md:text-xs tracking-wider">sardarshayan765@gmail.com</span>
+            </a>
+
+        </div>
+
+        <div class="mt-20 text-center border-t border-white/5 pt-10">
+            <p class="text-zinc-600 text-[10px] uppercase tracking-[0.3em]">Based in Pakistan — Working Worldwide</p>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

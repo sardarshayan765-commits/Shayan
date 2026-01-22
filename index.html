@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zia | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #050505;
+            overflow-x: hidden;
+        }
+
+        .gradient-sphere {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .premium-gradient {
+            background: linear-gradient(to bottom right, #4f46e5, #7e22ce);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.3);
+        }
+
+        /* Task Button Hover */
+        .task-btn:hover {
+            background: rgba(168, 85, 247, 0.1);
+            border-color: rgba(168, 85, 247, 0.4);
+            transform: translateY(-5px) scale(1.02);
+        }
+    </style>
+</head>
+<body class="text-zinc-200">
+
+    <div class="gradient-sphere top-[-5%] left-[-5%] md:w-[500px] md:h-[500px]"></div>
+    <div class="gradient-sphere bottom-[-5%] right-[-5%] md:w-[500px] md:h-[500px]"></div>
+
+    <nav class="fixed top-0 w-full z-50 py-6 md:py-8 px-6 md:px-10 bg-black/20 backdrop-blur-lg md:bg-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 group cursor-pointer" onclick="window.location.href='index.php'">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-indigo-600 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+                    <span class="text-white font-bold text-sm md:text-lg">Z</span>
+                </div>
+                <span class="font-extrabold tracking-[0.1em] text-white uppercase text-[10px] md:text-sm">Zia Architecture</span>
+            </div>
+            <a href="contact.php" class="px-4 py-2 md:px-6 md:py-2.5 bg-white/10 hover:bg-white text-white hover:text-black rounded-full text-[10px] md:text-xs font-bold transition-all border border-white/10 uppercase tracking-widest">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 md:pt-40 pb-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6 auto-rows-auto md:auto-rows-[140px]">
+            
+            <div class="md:col-span-4 md:row-span-3 glass-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col justify-center relative overflow-hidden order-1">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl"></div>
+                <span class="text-indigo-400 font-bold tracking-[0.2em] uppercase text-[9px] mb-4 flex items-center gap-2">
+                    <span class="w-6 h-[1px] bg-indigo-500"></span> Available for Projects
+                </span>
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6">
+                    Building <span class="text-glow text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Next-Gen</span> Software.
+                </h1>
+                <p class="text-zinc-400 text-sm md:text-lg max-w-xl leading-relaxed">
+                    I am Zia, a specialized Full-Stack Developer creating high-performance websites and bespoke software applications with clean code.
+                </p>
+            </div>
+
+            <div class="md:col-span-2 md:row-span-3 flex flex-col gap-4 md:gap-6 order-2">
+                <div class="h-full glass-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between items-center min-h-[220px]">
+                    <p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Tech Stack</p>
+                    <div class="grid grid-cols-3 gap-4 md:gap-6 my-4">
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="code-2"></i></div>
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="database"></i></div>
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="layout"></i></div>
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="terminal"></i></div>
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="globe"></i></div>
+                        <div class="p-2 bg-white/5 rounded-lg text-zinc-400"><i data-lucide="layers"></i></div>
+                    </div>
+                    <p class="text-[9px] text-zinc-600 font-medium">PHP • MySQL • WordPress</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass-card rounded-[1.5rem] md:rounded-[2rem] p-4 flex flex-col items-center justify-center text-center h-[120px]">
+                        <span class="text-2xl md:text-3xl font-bold text-white">5+</span>
+                        <span class="text-[9px] uppercase tracking-tighter text-zinc-500">Years Exp</span>
+                    </div>
+                    
+                    <a href="task.php" class="glass-card task-btn rounded-[1.5rem] md:rounded-[2rem] p-4 flex flex-col items-center justify-center text-center h-[120px] transition-all group">
+                        <span class="text-2xl md:text-3xl font-bold text-white group-hover:text-purple-400 transition-colors">40+</span>
+                        <span class="text-[9px] uppercase tracking-tighter text-zinc-500 mb-1">Tasks</span>
+                        <span class="text-[7px] text-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity font-bold uppercase">Click to view tasks</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 md:row-span-2 premium-gradient rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between order-3 text-white">
+                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-white mb-4 md:mb-0">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Software Architect</h3>
+                    <p class="text-[11px] md:text-xs opacity-80 leading-relaxed">Coding desktop and web-based applications from scratch.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 md:row-span-2 premium-gradient rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between order-4 text-white">
+                <i data-lucide="terminal" class="w-8 h-8 opacity-50 mb-4 md:mb-0"></i>
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">Full-Stack Coding</h3>
+                    <p class="text-[11px] md:text-sm opacity-80 leading-relaxed">Building complex systems using modern PHP frameworks.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 md:row-span-2 premium-gradient rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between order-5 text-white">
+                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-white mb-4 md:mb-0">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">CMS Management</h3>
+                    <p class="text-[11px] md:text-xs opacity-80 leading-relaxed">Developing professional, scalable WordPress solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="mt-20 md:mt-32 py-12 md:py-20 glass-card rounded-[2.5rem] md:rounded-[3rem] text-center px-6">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Build something extreme?</h2>
+            <a href="contact.php" class="inline-block px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition-transform text-sm uppercase tracking-widest">Start a Conversation</a>
+        </div>
+
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/5">
+        <p class="text-[9px] text-zinc-600 uppercase tracking-widest text-center">&copy; 2026 ZIA Portfolio — All Rights Reserved</p>
+        <div class="flex gap-6 text-zinc-500">
+    <a href="https://github.com/sardarshayan765-commits" target="_blank" aria-label="GitHub">
+        <i data-lucide="github" class="w-4 h-4 hover:text-white transition-colors"></i>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <i data-lucide="linkedin" class="w-4 h-4 hover:text-white transition-colors"></i>
+    </a>
+</div>
+
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
